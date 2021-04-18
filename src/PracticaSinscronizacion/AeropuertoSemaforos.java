@@ -25,13 +25,13 @@ class AvionesSem extends Thread {
 
 		aeropuerto.aterrizo(pistaAsignada);//se puede quedar esperando si hay muchos aviones en las pistas
 		try {
-			Thread.sleep(50); //De 0 a 50ms en la pista
+			Thread.sleep((long) (Math.random()*50)); //De 0 a 50ms en la pista
 		} catch (Exception ignored) {
 		}
 		aeropuerto.inHangar(pistaAsignada);
 		System.out.println("[" + id + "] En el hangar");
 		try {
-			Thread.sleep(500); //Espero 0 a 500ms en volver a querer salir
+			Thread.sleep((long) (Math.random()*500)); //Espero 0 a 500ms en volver a querer salir
 		} catch (Exception ignored) {
 		}
 		System.out.println("[" + id + "] Quiero despegar");
@@ -43,13 +43,13 @@ class AvionesSem extends Thread {
 		}
 		aeropuerto.despegar(pistaAsignada);
 		try {
-			Thread.sleep(50); //De 0 a 50ms en la pista
+			Thread.sleep((long) (Math.random()*50)); //De 0 a 50ms en la pista
 		} catch (Exception ignored) {
 		}
 		aeropuerto.entroEspacioAereoDespegando(pistaAsignada);
 		System.out.println("[" + id + "] En el espacio aereo");
 		try {
-			Thread.sleep(10); //De 0 a 10ms en el espacio aereo
+			Thread.sleep((long) (Math.random()*10)); //De 0 a 10ms en el espacio aereo
 		} catch (Exception ignored) {
 		}
 		aeropuerto.salgoEspacioAereo();
