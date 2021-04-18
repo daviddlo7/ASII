@@ -1,34 +1,5 @@
 package PracticaMonitores.Apartado1;
 
-import java.awt.*;
-import java.util.*;
-import javax.swing.*;
-import java.awt.event.*;
-
-//
-// Class Intersection is the class that controls the intersection.
-// All the synchronization should be made here.
-//
-// It simulates intersection using four methods:
-//             (2 used to access intersection)
-//             x2(car from northSouth direction or from eastWest Direction)
-//
-//xxxIN method:
-// You must call this method before crossing the intersection. 
-//
-//xxxOUT method:
-// You must call this method after crossing the intersection. 
-//
-//northSouthXX method:
-// the car direction is  north-south.
-//eastWestXX method:
-//the car direction is  east-west
-//
-//The class Intersection must avoid:
-//
-//    * 2 cars crossing with different directions (collision).
-//    
-//
 class Intersection{
     //Current direction
     //0 none
